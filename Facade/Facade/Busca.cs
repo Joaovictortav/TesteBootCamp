@@ -15,7 +15,7 @@ public class Busca: FacadeBase
     
     [HttpGet, Route("Get")] 
     [ProducesResponseType(typeof(void), StatusCodes.Status200OK)] 
-    public async Task<IActionResult> VerifyToken([FromHeader(Name = "AuthToken")] string authToken) 
+    public async Task<IActionResult> VerifyToken() 
     { 
         try 
         {

@@ -1,0 +1,12 @@
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\bin\Debug\net6.0\Kernel.deps.json
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\bin\Debug\net6.0\Kernel.dll
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\bin\Debug\net6.0\Kernel.pdb
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.csproj.AssemblyReference.cache
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.AssemblyInfoInputs.cache
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.AssemblyInfo.cs
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.csproj.CoreCompileInputs.cache
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.dll
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\refint\Kernel.dll
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.pdb
+C:\Users\joao.santos_cmtecnol\Desktop\BootCamp\Teste\TesteBootCamp\Kernel\obj\Debug\net6.0\ref\Kernel.dll
