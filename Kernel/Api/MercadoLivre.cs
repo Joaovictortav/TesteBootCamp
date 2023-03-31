@@ -22,6 +22,6 @@ public class MercadoLivre : ApiBase
 
     public override async Task<string> GetProduct(string id)
     {
-        throw new NotImplementedException();
+        //https://developers.mercadolivre.com.br/pt_br/descricao-de-produtos
     }
 }
