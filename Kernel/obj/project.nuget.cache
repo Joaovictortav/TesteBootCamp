@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7sZYV6iPwiWdzAYt0mxNUWYklxxJnVkrUvgyYXnkJc2fq3gir2JEcoHHQJUR4lBa/uEhzD+f1aox4EvWHUsFlw==",
+  "dgSpecHash": "eccmA9KhvvT/zStqzvIjxiG+bwO47jgtl4AUPvL1kHCLArzvk32MIQtV1sZ+/X3ASYm1EAm0DCt+klMTJrXnFg==",
   "success": true,
   "projectFilePath": "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,7 @@
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.0\\system.diagnostics.diagnosticsource.4.5.0.nupkg.sha512",

@@ -1,4 +1,7 @@
+using Kernel.DTO;
 using Kernel.Util;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Kernel.Api;
 
@@ -12,7 +15,7 @@ public class MercadoLivre : ApiBase
     {
     }
 
-    public override async Task<string> SearchProduct()
+    public override async Task<List<ProductResponse>> SearchProduct()
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();
@@ -21,7 +24,13 @@ public class MercadoLivre : ApiBase
         param.TryAdd("status", "active");
 
         var result = await t.Run("sites/MLB/search", param);
-        return result;
+        var ret = JsonConvert.DeserializeObject<List<Product>>(JObject.Parse(result).GetValue("result").ToString());
+        return ConvertObject(ret);
+    }
+
+    private List<ProductResponse> ConvertObject(List<Product> ret)
+    {
+        throw new NotImplementedException();
     }
 
     public override async Task<string> GetProduct(string id)

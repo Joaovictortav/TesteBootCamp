@@ -1,3 +1,4 @@
+using Kernel.DTO;
 using Kernel.Util;
 
 namespace Kernel.Api;
@@ -26,7 +27,7 @@ public abstract class ApiBase
         var ci = ApiMap[name].GetConstructor( Array.Empty<Type>() );
         return (ApiBase)ci?.Invoke(new object[]{  })!;
     }
-    public abstract Task<string> SearchProduct();
+    public abstract Task<List<ProductResponse>> SearchProduct();
     public abstract Task<string> GetProduct(string id);
     
 }

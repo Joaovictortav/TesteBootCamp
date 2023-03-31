@@ -1,3 +1,5 @@
+using Kernel.DTO;
+
 namespace Kernel.Api;
 
 public class Charlinhos : ApiBase
@@ -6,7 +8,7 @@ public class Charlinhos : ApiBase
     {
     }
 
-    public override Task<string> SearchProduct()
+    public override Task<List<ProductResponse>> SearchProduct()
     {
         throw new NotImplementedException();
     }

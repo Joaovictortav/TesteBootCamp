@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CK1YCet+e5H9PQG0T+IB5uCz4kwKDxklcb+Whs2lczvoYy0FAOY2yREpZa6XkqpZ3v5/CmgcLVwCimojCToGSA==",
+  "dgSpecHash": "ugyAieQOvH8eKEr5fs9PHZblaZY8uw1jH8xon/6+36E7QwpSO2u7pLRJ8rxwfS4oEKPWsC1qT3B5s2CXUuZJ2w==",
   "success": true,
   "projectFilePath": "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj",
   "expectedPackageFiles": [
@@ -115,7 +115,7 @@
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512",
+    "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.2\\pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
