@@ -23,7 +23,7 @@ public abstract class ApiBase
         if (!ApiMap.ContainsKey(name))
             throw new Exception("Monitor invalido");
 
-        var ci = ApiMap[name].GetConstructor( Type.EmptyTypes );
+        var ci = ApiMap[name].GetConstructor( Array.Empty<Type>() );
         return (ApiBase)ci?.Invoke(new object[]{  })!;
     }
     public abstract Task<string> SearchProduct();

@@ -5,17 +5,13 @@ namespace Kernel.Controllers;
 
 public class BuscaController
 {
-    //https://docs.google.com/presentation/d/1zLe3pGjjyde49uv4Ld6HjyxTemnG9MPqIlSbXoUI6zg/edit#slide=id.g1e019cdf64b_7_60
     public async Task<string> Get()
     {
-        // ApiBase b = new Amazon(Amazon.baseUrl);
-        // ApiBase s = new MercadoLivre(MercadoLivre.baseUrl);
-
-        // ApiBase mercadoLivre = ApiBase.Instance("mercado-livre", "https://api.mercadolibre.com/");
+        ApiBase mercadoLivre = ApiBase.Instance("mercado-livre");
         ApiBase amazon = ApiBase.Instance("amazon");
-        // ApiBase charlinhos = ApiBase.Instance("charlinhos", "");
+        // ApiBase charlinhos = ApiBase.Instance("charlinhos");
         
-        // var ret = await mercadoLivre.SearchProduct();
+        var ret = await mercadoLivre.SearchProduct();
         var resp = await amazon.SearchProduct();
         // var ret2 = await charlinhos.SearchProduct();
         
@@ -24,9 +20,7 @@ public class BuscaController
 
     public async Task<string> GetProduct(string id, string store)
     {
-        ApiBase amazon = ApiBase.Instance(store);
-
-        var resp = await amazon.GetProduct(id);
-        return await Task.FromResult("");
+        ApiBase mercadoLivre = ApiBase.Instance(store);
+        return await mercadoLivre.GetProduct(id);
     }
 }

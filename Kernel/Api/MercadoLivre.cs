@@ -8,7 +8,7 @@ public class MercadoLivre : ApiBase
     {
         { "Authorization", "Bearer 0UgEpizqJM7CSl3O9nbIzrTvTuaU2JZG" },
     };
-    public MercadoLivre(string baseUrl) : base(baseUrl)
+    public MercadoLivre() : base("https://api.mercadolibre.com/")
     {
     }
 
@@ -27,7 +27,7 @@ public class MercadoLivre : ApiBase
     public override async Task<string> GetProduct(string id)
     {
         var t = new RestClient(baseUrl, "GET");
-        var result = await t.Run($"items/{id}/description", headers: header);
+        var result = await t.Run($"/products/{id}", headers: header);
         return result;
     }
 }

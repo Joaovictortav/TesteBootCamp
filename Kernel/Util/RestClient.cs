@@ -18,8 +18,10 @@ public class RestClient
     }
     internal async Task<string> Run(string path = null, Dictionary<string, object> qs = null, Dictionary<string, string>? headers = null)
     {
-        
         var url = _baseUrl + path + "?";
+        
+        if (qs is null)
+            url = _baseUrl + path;
         
         if (qs is {Count: > 0})
         {
