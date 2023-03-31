@@ -1,3 +1,4 @@
+using Kernel.Api;
 using Kernel.Util;
 
 namespace Kernel.Controllers;
@@ -6,21 +7,19 @@ public class BuscaController
 {
     public async Task<string> Get()
     {
-        var t = new RestClient("https://api.mercadolibre.com/", "GET");
-        var param = new Dictionary<string, object>();
+        // ApiBase b = new Amazon(Amazon.baseUrl);
+        // ApiBase s = new MercadoLivre(MercadoLivre.baseUrl);
 
-        param.TryAdd("q", "playstation");
-        param.TryAdd("status", "active");
+        ApiBase s = ApiBase.Instance("mercado-livre", "https://api.mercadolibre.com/");
+        ApiBase b = ApiBase.Instance("amazon", "https://amazon23.p.rapidapi.com/");
+        ApiBase r = ApiBase.Instance("charlinhos", "");
         
-        var result = await t.Run("sites/MLB/search", param);
-        return result;
-    }
-    public async Task<string> GetRap()
-    {
-        var t = new RestClient("https://api.mercadolibre.com/sites/MLB/search?q=playstation&status=active", "GET");
-        var param = new Dictionary<string, object>();
-
-        var result = await t.Run("", param);
-        return result;
+        var ret = await b.SearchProduct();
+        var resp = await s.SearchProduct();
+        var ret2 = await r.SearchProduct();
+        
+        
+        
+        return await Task.FromResult("");
     }
 }
