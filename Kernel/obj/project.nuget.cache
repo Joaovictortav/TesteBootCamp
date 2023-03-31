@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDj+anr76YJNF3Km+GvnRKNauu9LKhXwn8hkDXZEqZ/a7QEIibDceuY8krW7eJkoyXsMMcC26xVBnwxH09I/Ng==",
+  "dgSpecHash": "DFsgPdzm1fbXiodk3HX1mF3aRetRXYgo7W7z8zpSVhuuS6XDXdc4mPw8NpVGzrBoxxzqz3SLrcMmkczf9UhG6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joao.santos_cmtecnol\\RiderProjects\\BootCamp\\Kernel\\Kernel.csproj",
+  "projectFilePath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

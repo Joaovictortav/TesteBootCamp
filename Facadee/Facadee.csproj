@@ -10,4 +10,8 @@
       <None Include="appsettings.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Kernel\Kernel.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -2048,11 +2048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\RiderProjects\\BootCamp\\Kernel\\Kernel.csproj",
+      "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
       "projectName": "Kernel",
-      "projectPath": "C:\\Users\\joao.santos_cmtecnol\\RiderProjects\\BootCamp\\Kernel\\Kernel.csproj",
+      "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
       "packagesPath": "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joao.santos_cmtecnol\\RiderProjects\\BootCamp\\Kernel\\obj\\",
+      "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

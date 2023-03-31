@@ -1,3 +1,4 @@
+using Kernel.Controllers;
 using Microsoft.AspNetCore.Mvc;
 namespace Facadee.Facede;
 
@@ -11,5 +12,17 @@ public class Busca: FacadeBase
     {
     }
     
-    
+    [HttpGet, Route("Get")] 
+    [ProducesResponseType(typeof(void), StatusCodes.Status200OK)] 
+    public async Task<IActionResult> VerifyToken([FromHeader(Name = "AuthToken")] string authToken) 
+    { 
+        try 
+        {
+            return Ok(await new BuscaController().Get()); 
+        } 
+        catch (Exception e)
+        {
+            throw new Exception($"Erro: {e.Message}");
+        } 
+    }
 }
