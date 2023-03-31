@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Facadee.Facede;
+namespace Facadee.Facade;
 
 public class FacadeBase : Controller
 {	

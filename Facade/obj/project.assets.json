@@ -2065,11 +2065,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facadee\\Facadee.csproj",
-      "projectName": "Facadee",
-      "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facadee\\Facadee.csproj",
+      "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj",
+      "projectName": "Facade",
+      "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj",
       "packagesPath": "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facadee\\obj\\",
+      "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

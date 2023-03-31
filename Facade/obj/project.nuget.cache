@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eHXcdsUvmRbh89LmrgH+/vRX51QjEadcdVlBL72I4U4LgjeR4XB7FwcwtaIuHcwLY+ONePPhs4xmbk0BDMjG4g==",
+  "dgSpecHash": "iDKPCR+mEr/pMAVguVpwpP1u7xCgJreOj77trlSDyViPPqjDaOLVPTM2fJCOuYqNnvGCb+fufBcHn2QJMqSBlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facadee\\Facadee.csproj",
+  "projectFilePath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

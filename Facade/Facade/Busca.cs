@@ -1,6 +1,7 @@
 using Kernel.Controllers;
 using Microsoft.AspNetCore.Mvc;
-namespace Facadee.Facede;
+
+namespace Facadee.Facade;
 
 [ApiController]    
 [Route("V1/Busca", Name = "Busca")]	
