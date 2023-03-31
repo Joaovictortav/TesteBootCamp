@@ -5,6 +5,7 @@ namespace Kernel.Controllers;
 
 public class BuscaController
 {
+    //https://docs.google.com/presentation/d/1zLe3pGjjyde49uv4Ld6HjyxTemnG9MPqIlSbXoUI6zg/edit#slide=id.g1e019cdf64b_7_60
     public async Task<string> Get()
     {
         // ApiBase b = new Amazon(Amazon.baseUrl);

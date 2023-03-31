@@ -4,7 +4,11 @@ namespace Kernel.Api;
 
 public class MercadoLivre : ApiBase
 {
-    public MercadoLivre() : base("")
+    private readonly Dictionary<string, string> header = new Dictionary<string, string>()
+    {
+        { "Authorization", "Bearer 0UgEpizqJM7CSl3O9nbIzrTvTuaU2JZG" },
+    };
+    public MercadoLivre(string baseUrl) : base(baseUrl)
     {
     }
 
@@ -22,6 +26,8 @@ public class MercadoLivre : ApiBase
 
     public override async Task<string> GetProduct(string id)
     {
-        throw new NotImplementedException();
+        var t = new RestClient(baseUrl, "GET");
+        var result = await t.Run($"items/{id}/description", headers: header);
+        return result;
     }
 }
