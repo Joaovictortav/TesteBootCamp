@@ -15,11 +15,25 @@ public class Busca: FacadeBase
     
     [HttpGet, Route("Get")] 
     [ProducesResponseType(typeof(string), StatusCodes.Status200OK)] 
-    public async Task<IActionResult> VerifyToken() 
+    public async Task<IActionResult> Get() 
     { 
         try 
         {
             return Ok(await new BuscaController().Get()); 
+        } 
+        catch (Exception e)
+        {
+            throw new Exception($"Erro: {e.Message}");
+        } 
+    }
+    
+    [HttpGet, Route("GetProduct")] 
+    [ProducesResponseType(typeof(string), StatusCodes.Status200OK)] 
+    public async Task<IActionResult> GetProduct([FromQuery] string id, [FromQuery] string store) 
+    { 
+        try 
+        {
+            return Ok(await new BuscaController().GetProduct(id, store)); 
         } 
         catch (Exception e)
         {

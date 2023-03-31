@@ -19,4 +19,9 @@ public class MercadoLivre : ApiBase
         var result = await t.Run("sites/MLB/search", param);
         return result;
     }
+
+    public override async Task<string> GetProduct(string id)
+    {
+        throw new NotImplementedException();
+    }
 }

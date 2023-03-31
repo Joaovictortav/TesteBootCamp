@@ -10,16 +10,22 @@ public class BuscaController
         // ApiBase b = new Amazon(Amazon.baseUrl);
         // ApiBase s = new MercadoLivre(MercadoLivre.baseUrl);
 
-        ApiBase s = ApiBase.Instance("mercado-livre", "https://api.mercadolibre.com/");
-        ApiBase b = ApiBase.Instance("amazon", "https://amazon23.p.rapidapi.com/");
-        ApiBase r = ApiBase.Instance("charlinhos", "");
+        // ApiBase mercadoLivre = ApiBase.Instance("mercado-livre", "https://api.mercadolibre.com/");
+        ApiBase amazon = ApiBase.Instance("amazon", "https://amazon23.p.rapidapi.com/");
+        // ApiBase charlinhos = ApiBase.Instance("charlinhos", "");
         
-        var ret = await b.SearchProduct();
-        var resp = await s.SearchProduct();
-        var ret2 = await r.SearchProduct();
+        // var ret = await mercadoLivre.SearchProduct();
+        var resp = await amazon.SearchProduct();
+        // var ret2 = await charlinhos.SearchProduct();
         
-        
-        
+        return await Task.FromResult("");
+    }
+
+    public async Task<string> GetProduct(string id, string store)
+    {
+        ApiBase amazon = ApiBase.Instance(store, "https://amazon23.p.rapidapi.com/");
+
+        var resp = await amazon.GetProduct(id);
         return await Task.FromResult("");
     }
 }

@@ -27,5 +27,6 @@ public abstract class ApiBase
         return (ApiBase)ci?.Invoke(new object[]{ baseUrl })!;
     }
     public abstract Task<string> SearchProduct();
+    public abstract Task<string> GetProduct(string id);
     
 }
