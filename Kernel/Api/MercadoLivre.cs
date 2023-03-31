@@ -4,7 +4,7 @@ namespace Kernel.Api;
 
 public class MercadoLivre : ApiBase
 {
-    public MercadoLivre(string baseUrl) : base(baseUrl)
+    public MercadoLivre() : base("")
     {
     }
 
@@ -22,6 +22,6 @@ public class MercadoLivre : ApiBase
 
     public override async Task<string> GetProduct(string id)
     {
-        //https://developers.mercadolivre.com.br/pt_br/descricao-de-produtos
+        throw new NotImplementedException();
     }
 }

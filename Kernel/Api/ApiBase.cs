@@ -18,13 +18,13 @@ public abstract class ApiBase
         this.baseUrl = baseUrl;
     }
 
-    public static ApiBase Instance(string name, string baseUrl)
+    public static ApiBase Instance(string name)
     {
         if (!ApiMap.ContainsKey(name))
             throw new Exception("Monitor invalido");
 
-        var ci = ApiMap[name].GetConstructor(new []{ typeof(string) });
-        return (ApiBase)ci?.Invoke(new object[]{ baseUrl })!;
+        var ci = ApiMap[name].GetConstructor( Type.EmptyTypes );
+        return (ApiBase)ci?.Invoke(new object[]{  })!;
     }
     public abstract Task<string> SearchProduct();
     public abstract Task<string> GetProduct(string id);

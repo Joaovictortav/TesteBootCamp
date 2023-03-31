@@ -13,7 +13,7 @@ public class Amazon : ApiBase
     {
     }
 
-    public Amazon(string baseUrl) : base(baseUrl)
+    public Amazon() : base("https://amazon23.p.rapidapi.com/")
     {
     }
 
