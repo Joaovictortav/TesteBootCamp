@@ -19,30 +19,8 @@ public class RestClient
     internal async Task<string> Run(string path = null, Dictionary<string, object> qs = null)
     {
         
-        var url = _baseUrl + path + "?";
-        
-        if (qs is {Count: > 0})
-        {
-            var paramsCount = 1;
-            foreach (var value in qs)
-            {
-                if (paramsCount > 1)
-                    url += "&";
-                switch (value.Value)
-                {
-                    case null:
-                        continue;
-                    case DateTime time:
-                        url += $"{value.Key}={time:yyyy-MM-dd HH:mm:ss}&";
-                        break;
-                    default:
-                        url += $"{value.Key}={HttpUtility.UrlEncode(value.Value.ToString())}";
-                        break;
-                }
-                paramsCount++;
-            }
-        }
-        
+        var url = _baseUrl + path;
+
         var result = string.Empty;
         var client = new HttpClient();
 

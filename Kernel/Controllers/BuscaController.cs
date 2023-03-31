@@ -6,7 +6,7 @@ public class BuscaController
 {
     public async Task<string> Get()
     {
-        var t = new RestClient("https://api.mercadolivre.com/sites/MLB/search?q=playstation&status=active", "GET");
+        var t = new RestClient("https://api.mercadolibre.com/sites/MLB/search?q=playstation&status=active", "GET");
         var param = new Dictionary<string, object>();
         
         
