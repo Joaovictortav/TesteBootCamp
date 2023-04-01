@@ -22,3 +22,5 @@ C:\www\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.dll
 C:\www\TesteBootCamp\Kernel\obj\Debug\net6.0\refint\Kernel.dll
 C:\www\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.pdb
 C:\www\TesteBootCamp\Kernel\obj\Debug\net6.0\ref\Kernel.dll
+C:\www\TesteBootCamp\Kernel\bin\Debug\net6.0\Kernel.runtimeconfig.json
+C:\www\TesteBootCamp\Kernel\obj\Debug\net6.0\Kernel.genruntimeconfig.cache

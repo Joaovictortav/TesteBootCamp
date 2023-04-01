@@ -22,11 +22,15 @@ public class BuscaController
         
         return result;
     }
-
     public async Task<ProductDetail> GetProduct(string authToken, string id, string store)
     {
         await Auth.Verify(authToken);
         ApiBase mercadoLivre = ApiBase.Instance(store);
         return await mercadoLivre.GetProduct(id);
     }
+    public async Task<ProductDetail> Favorite()
+    {
+        throw new NotImplementedException();
+    }
+    
 }

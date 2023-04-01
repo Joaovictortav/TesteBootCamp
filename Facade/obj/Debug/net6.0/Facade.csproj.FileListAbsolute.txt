@@ -90,8 +90,6 @@ C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Humanizer.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
-C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\www\TesteBootCamp\Facade\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll

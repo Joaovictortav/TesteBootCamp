@@ -10,5 +10,4 @@ public class FacadeBase : Controller
 	{
 		base.OnActionExecuting(ctx);
 	}
-	
 }

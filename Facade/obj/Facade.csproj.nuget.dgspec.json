@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj": {}
+    "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj": {
+    "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj",
+        "projectUniqueName": "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj",
         "projectName": "Facade",
-        "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\Facade.csproj",
-        "packagesPath": "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Facade\\obj\\",
+        "projectPath": "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj",
+        "packagesPath": "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\",
+        "outputPath": "C:\\www\\TesteBootCamp\\Facade\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\joao.santos_cmtecnol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samuel.soares_cmtecn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj": {
-                "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj"
+              "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj": {
+                "projectPath": "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj"
               }
             }
           }
@@ -101,7 +98,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -113,24 +111,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj": {
+    "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
+        "projectUniqueName": "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj",
         "projectName": "Kernel",
-        "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
-        "packagesPath": "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\obj\\",
+        "projectPath": "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj",
+        "packagesPath": "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\",
+        "outputPath": "C:\\www\\TesteBootCamp\\Kernel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\joao.santos_cmtecnol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samuel.soares_cmtecn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,13 +152,51 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[13.0.3-beta1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            },
+            "Topshelf": {
+              "target": "Package",
+              "version": "[4.3.1-develop.253, )"
             }
           },
           "imports": [
@@ -172,7 +205,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -181,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
