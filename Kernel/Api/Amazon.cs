@@ -1,4 +1,5 @@
 using Kernel.DTO;
+using Kernel.DTO.Amazon;
 using Kernel.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -20,7 +21,7 @@ public class Amazon : ApiBase
     {
     }
 
-    public async override Task<List<ProductResponse>> SearchProduct()
+    public override async Task<List<ProductResponse>> SearchProduct()
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();

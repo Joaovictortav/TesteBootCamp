@@ -16,7 +16,7 @@ public class RestClient
         _baseUrl = baseUrl;
         _requestMessage.Method = new HttpMethod(method);
     }
-    internal async Task<string> Run(string path = null, Dictionary<string, object> qs = null, Dictionary<string, string>? headers = null)
+    internal async Task<string> Run(string path = null, Dictionary<string, object>? qs = null, Dictionary<string, string>? headers = null)
     {
         var url = _baseUrl + path + "?";
         

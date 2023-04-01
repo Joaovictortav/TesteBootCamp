@@ -8,11 +8,11 @@
     }
   },
   "profiles": {
-    "Facadee": {
+    "Facade": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7268;http://localhost:5268",
+      "applicationUrl": "http://localhost:1858/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

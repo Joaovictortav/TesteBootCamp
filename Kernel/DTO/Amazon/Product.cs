@@ -1,6 +1,4 @@
-using Newtonsoft.Json.Linq;
-
-namespace Kernel.DTO;
+namespace Kernel.DTO.Amazon;
 
 public class Product
 {

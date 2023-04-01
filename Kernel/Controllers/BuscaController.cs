@@ -1,22 +1,19 @@
 using Kernel.Api;
 using Kernel.DTO;
-using Kernel.Util;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Kernel.Controllers;
 
 public class BuscaController
 {
-    public async Task<string> Get()
+    public async Task<List<ProductResponse>> Get()
     {
-        // ApiBase mercadoLivre = ApiBase.Instance("mercado-livre");
-        ApiBase amazon = ApiBase.Instance("amazon");
+        ApiBase mercadoLivre = ApiBase.Instance("mercado-livre");
+        //ApiBase amazon = ApiBase.Instance("amazon");
         
-        // var ret = await mercadoLivre.SearchProduct();
-        var resp = await amazon.SearchProduct();
+        var resp = await mercadoLivre.SearchProduct();
+        //var resp = await amazon.SearchProduct();
         
-        return await Task.FromResult("");
+        return resp;
     }
 
     public async Task<string> GetProduct(string id, string store)

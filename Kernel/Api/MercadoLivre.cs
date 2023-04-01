@@ -1,4 +1,6 @@
 using Kernel.DTO;
+using Kernel.DTO.Amazon;
+using Kernel.DTO.MercadoLivre;
 using Kernel.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -24,13 +26,25 @@ public class MercadoLivre : ApiBase
         param.TryAdd("status", "active");
 
         var result = await t.Run("sites/MLB/search", param);
-        var ret = JsonConvert.DeserializeObject<List<Product>>(JObject.Parse(result).GetValue("result").ToString());
+        var ret = JsonConvert.DeserializeObject<List<ProductML>>(JObject.Parse(result).GetValue("results")!.ToString());
         return ConvertObject(ret);
     }
 
-    private List<ProductResponse> ConvertObject(List<Product> ret)
+    private List<ProductResponse> ConvertObject(List<ProductML> products)
     {
-        throw new NotImplementedException();
+        var retorno = new List<ProductResponse>();
+        foreach (var p in products)
+        {
+            retorno.Add(new ProductResponse()
+            {
+                price = p.price,
+                stockQuantity = p.sold_quantity,
+                description = p.title,
+                provider = ""
+            });
+        }
+
+        return retorno;
     }
 
     public override async Task<string> GetProduct(string id)

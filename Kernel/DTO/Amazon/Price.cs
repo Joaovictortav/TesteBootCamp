@@ -1,4 +1,4 @@
-namespace Kernel.DTO;
+namespace Kernel.DTO.Amazon;
 
 public class Price
 {
