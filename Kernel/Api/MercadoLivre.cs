@@ -40,8 +40,9 @@ public class MercadoLivre : ApiBase
                 price = p.price,
                 stockQuantity = p.sold_quantity,
                 description = p.title,
-                provider = "",
-                link = p.thumbnail
+                provider = "mercado-livre",
+                link = p.thumbnail,
+                id = p.catalog_product_id
             });
         }
 

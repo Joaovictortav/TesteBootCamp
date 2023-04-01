@@ -7,4 +7,5 @@ public class ProductResponse
     public string price { get; set; }
     public string stockQuantity { get; set; }
     public string link { get; set; }
+    public string id { get; set; }
 }
