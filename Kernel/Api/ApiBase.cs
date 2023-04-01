@@ -27,7 +27,7 @@ public abstract class ApiBase
         var ci = ApiMap[name].GetConstructor( Array.Empty<Type>() );
         return (ApiBase)ci?.Invoke(new object[]{  })!;
     }
-    public abstract Task<List<ProductResponse>> SearchProduct();
+    public abstract Task<List<ProductResponse>> SearchProduct(string name);
     public abstract Task<string> GetProduct(string id);
     
 }

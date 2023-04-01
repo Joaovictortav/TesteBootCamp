@@ -15,11 +15,11 @@ public class Busca: FacadeBase
     
     [HttpGet, Route("Get")] 
     [ProducesResponseType(typeof(string), StatusCodes.Status200OK)] 
-    public async Task<IActionResult> Get() 
+    public async Task<IActionResult> Get([FromQuery] string name) 
     { 
         try 
         {
-            return Ok(await new BuscaController().Get()); 
+            return Ok(await new BuscaController().Get(name)); 
         } 
         catch (Exception e)
         {

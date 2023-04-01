@@ -17,12 +17,12 @@ public class MercadoLivre : ApiBase
     {
     }
 
-    public override async Task<List<ProductResponse>> SearchProduct()
+    public override async Task<List<ProductResponse>> SearchProduct(string name)
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();
 
-        param.TryAdd("q", "playstation");
+        param.TryAdd("q", name);
         param.TryAdd("status", "active");
 
         var result = await t.Run("sites/MLB/search", param);
@@ -40,7 +40,8 @@ public class MercadoLivre : ApiBase
                 price = p.price,
                 stockQuantity = p.sold_quantity,
                 description = p.title,
-                provider = ""
+                provider = "",
+                link = p.thumbnail
             });
         }
 

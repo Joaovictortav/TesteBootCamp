@@ -8,7 +8,7 @@ public class Charlinhos : ApiBase
     {
     }
 
-    public override Task<List<ProductResponse>> SearchProduct()
+    public override Task<List<ProductResponse>> SearchProduct(string name)
     {
         throw new NotImplementedException();
     }

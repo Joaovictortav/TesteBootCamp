@@ -5,12 +5,12 @@ namespace Kernel.Controllers;
 
 public class BuscaController
 {
-    public async Task<List<ProductResponse>> Get()
+    public async Task<List<ProductResponse>> Get(string name)
     {
         ApiBase mercadoLivre = ApiBase.Instance("mercado-livre");
         //ApiBase amazon = ApiBase.Instance("amazon");
         
-        var resp = await mercadoLivre.SearchProduct();
+        var resp = await mercadoLivre.SearchProduct(name);
         //var resp = await amazon.SearchProduct();
         
         return resp;

@@ -21,7 +21,7 @@ public class Amazon : ApiBase
     {
     }
 
-    public override async Task<List<ProductResponse>> SearchProduct()
+    public override async Task<List<ProductResponse>> SearchProduct(string name)
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();
