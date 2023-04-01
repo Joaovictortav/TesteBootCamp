@@ -49,7 +49,7 @@ public class MercadoLivre : ApiBase
         return retorno;
     }
 
-    public override async Task<string> GetProduct(string id)
+    public override async Task<ProductDetail> GetProduct(string id)
     {
         var t = new RestClient(baseUrl, "GET");
         var result = await t.Run($"/products/{id}", headers: header);

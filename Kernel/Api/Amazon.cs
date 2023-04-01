@@ -35,7 +35,7 @@ public class Amazon : ApiBase
 
     }
 
-    public async override Task<string> GetProduct(string id)
+    public async override Task<ProductDetail> GetProduct(string id)
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();

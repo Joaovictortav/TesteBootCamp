@@ -10638,19 +10638,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\": {}
+    "C:\\Users\\lucia.ramalho_cmtecn\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj",
+      "projectUniqueName": "C:\\bootcamp\\TesteBootCamp\\Facade\\Facade.csproj",
       "projectName": "Facade",
-      "projectPath": "C:\\www\\TesteBootCamp\\Facade\\Facade.csproj",
-      "packagesPath": "C:\\Users\\samuel.soares_cmtecn\\.nuget\\packages\\",
-      "outputPath": "C:\\www\\TesteBootCamp\\Facade\\obj\\",
+      "projectPath": "C:\\bootcamp\\TesteBootCamp\\Facade\\Facade.csproj",
+      "packagesPath": "C:\\Users\\lucia.ramalho_cmtecn\\.nuget\\packages\\",
+      "outputPath": "C:\\bootcamp\\TesteBootCamp\\Facade\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\samuel.soares_cmtecn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucia.ramalho_cmtecn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10658,15 +10663,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/cmtecnologia/auth/f65b0375-9674-41e2-81f1-3024fedead90/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj": {
-              "projectPath": "C:\\www\\TesteBootCamp\\Kernel\\Kernel.csproj"
+            "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj": {
+              "projectPath": "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj"
             }
           }
         }

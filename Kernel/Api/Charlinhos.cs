@@ -13,7 +13,7 @@ public class Charlinhos : ApiBase
         throw new NotImplementedException();
     }
 
-    public override Task<string> GetProduct(string id)
+    public override Task<ProductDetail> GetProduct(string id)
     {
         throw new NotImplementedException();
     }

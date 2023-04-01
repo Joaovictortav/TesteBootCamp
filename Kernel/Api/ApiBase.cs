@@ -28,6 +28,6 @@ public abstract class ApiBase
         return (ApiBase)ci?.Invoke(new object[]{  })!;
     }
     public abstract Task<List<ProductResponse>> SearchProduct(string name);
-    public abstract Task<string> GetProduct(string id);
+    public abstract Task<ProductDetail> GetProduct(string id);
     
 }
