@@ -7,13 +7,17 @@ public class BuscaController
 {
     public async Task<List<ProductResponse>> Get(string name)
     {
+        var result = new List<ProductResponse>();
         ApiBase mercadoLivre = ApiBase.Instance("mercado-livre");
-        //ApiBase amazon = ApiBase.Instance("amazon");
+        ApiBase amazon = ApiBase.Instance("amazon");
         
-        var resp = await mercadoLivre.SearchProduct(name);
-        //var resp = await amazon.SearchProduct();
+        var respMercadoLivre = await mercadoLivre.SearchProduct(name);
+        var respAmazon = await amazon.SearchProduct(name);
         
-        return resp;
+        result.AddRange(respMercadoLivre);
+        result.AddRange(respAmazon);
+        
+        return result;
     }
 
     public async Task<string> GetProduct(string id, string store)

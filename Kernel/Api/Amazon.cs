@@ -57,7 +57,8 @@ public class Amazon : ApiBase
                 price = p.price.current_price,
                 stockQuantity = p.totalProducts,
                 description = p.title,
-                provider = ""
+                provider = "",
+                link = p.thumbnail
             });
         }
 
