@@ -20,7 +20,7 @@ public class BuscaController
         return result;
     }
 
-    public async Task<string> GetProduct(string id, string store)
+    public async Task<ProductDetail> GetProduct(string id, string store)
     {
         ApiBase mercadoLivre = ApiBase.Instance(store);
         return await mercadoLivre.GetProduct(id);

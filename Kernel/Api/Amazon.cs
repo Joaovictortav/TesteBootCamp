@@ -1,5 +1,6 @@
 using Kernel.DTO;
 using Kernel.DTO.Amazon;
+using Kernel.DTO.MercadoLivre;
 using Kernel.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -35,7 +36,7 @@ public class Amazon : ApiBase
 
     }
 
-    public async override Task<ProductDetail> GetProduct(string id)
+    public override async Task<ProductDetail> GetProduct(string id)
     {
         var t = new RestClient(baseUrl, "GET");
         var param = new Dictionary<string, object>();
@@ -44,7 +45,19 @@ public class Amazon : ApiBase
         param.TryAdd("country", "BR");
 
         var result = await t.Run("product-details", param, header);
-        return result;
+        var ret = JsonConvert.DeserializeObject<List<DetailAmazon>>(JObject.Parse(result).GetValue("result")!.ToString());
+        return ConvertDetail(ret);
+    }
+
+    private ProductDetail ConvertDetail(List<DetailAmazon> details)
+    {
+        var detail = details.FirstOrDefault();
+        return new ProductDetail()
+        {
+            Detalhe = detail?.description,
+            Link = detail?.url,
+            Name = detail?.title
+        };
     }
 
     public List<ProductResponse> ConvertObject(List<Product> products)

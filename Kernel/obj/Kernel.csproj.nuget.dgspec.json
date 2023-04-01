@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj": {}
+    "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj": {}
   },
   "projects": {
-    "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj": {
+    "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj",
+        "projectUniqueName": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
         "projectName": "Kernel",
-        "projectPath": "C:\\bootcamp\\TesteBootCamp\\Kernel\\Kernel.csproj",
-        "packagesPath": "C:\\Users\\lucia.ramalho_cmtecn\\.nuget\\packages\\",
-        "outputPath": "C:\\bootcamp\\TesteBootCamp\\Kernel\\obj\\",
+        "projectPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\Kernel.csproj",
+        "packagesPath": "C:\\Users\\joao.santos_cmtecnol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joao.santos_cmtecnol\\Desktop\\BootCamp\\Teste\\TesteBootCamp\\Kernel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lucia.ramalho_cmtecn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\joao.santos_cmtecnol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/cmtecnologia/auth/f65b0375-9674-41e2-81f1-3024fedead90/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -59,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

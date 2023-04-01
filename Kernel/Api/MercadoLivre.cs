@@ -53,6 +53,19 @@ public class MercadoLivre : ApiBase
     {
         var t = new RestClient(baseUrl, "GET");
         var result = await t.Run($"/products/{id}", headers: header);
-        return result;
+        
+        var ret = JsonConvert.DeserializeObject<DetailML>(result);
+        return ConvertDetail(ret);
+    }
+
+    private ProductDetail ConvertDetail(DetailML detail)
+    {
+        return new ProductDetail()
+        {
+            Detalhe = detail.short_description?.content!,
+            Domain = detail.domain_id,
+            Link = detail.permalink,
+            Name = detail.name
+        };
     }
 }

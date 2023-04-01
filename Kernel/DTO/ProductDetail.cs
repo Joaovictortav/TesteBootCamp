@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Kernel.DTO
 {
-    internal class ProductDetail
+    public class ProductDetail
     {
         public string Name { get; set; }
         public string Detalhe { get; set; }
         public string Link { get; set; }
+        public string Domain { get; set; }
     }
 }
