@@ -11,7 +11,7 @@ public class Amazon : ApiBase
 {
     private readonly Dictionary<string, string> header = new Dictionary<string, string>()
     {
-        { "X-RapidAPI-Key", "e143188d47msh520d387e7756ceap1a336bjsn08c4b4ece15c" },
+        { "X-RapidAPI-Key", "c3c7dec8b2msh11b9af671cb7e29p14b408jsnf34ad4d67522" },
         { "X-RapidAPI-Host", "amazon23.p.rapidapi.com" }
     };
     static Amazon()
