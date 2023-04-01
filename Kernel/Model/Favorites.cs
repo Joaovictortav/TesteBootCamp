@@ -24,6 +24,10 @@ namespace Kernel.Model
             
             BootcampContext.Get().FavoriteSet.Add(this);
         }
+        public static Task<Favorites?> GetFavorites(string? name = null, string? id = null, string? store = null)
+        {
+            return BootcampContext.Get().FavoriteSet.FirstOrDefaultAsync(s => s.ProductId == id && s.Store == store && s.User == name);
+        }
         internal void Delete()
         {
             BootcampContext.Get().FavoriteSet.Remove(this);
@@ -35,9 +39,11 @@ namespace Kernel.Model
             
             throw new NotImplementedException();
         }
-        public static Task<Favorites?> GetFavorites(string? name = null, string? id = null, string? store = null)
+
+        public static async Task Redirect(string? id = null)
         {
-            return BootcampContext.Get().FavoriteSet.FirstOrDefaultAsync(s => s.User == name && s.ProductId == id && s.Store == store);
+            
+            throw new NotImplementedException();
         }
     }
 }

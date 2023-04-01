@@ -16,11 +16,25 @@ public class Favoritos : FacadeBase
 
     [HttpPost, Route("Favorite")] 
     [ProducesResponseType(typeof(UserFavorite), StatusCodes.Status200OK)] 
-    public async Task<IActionResult> Favorite([FromBody] UserFavorite userFavorite) 
+    public async Task<IActionResult> GetFavorite([FromBody] UserFavorite userFavorite) 
     { 
         try 
         {
-            return Ok(await new FavoriteController().Favorite(userFavorite)); 
+            return Ok(await new FavoriteController().AddFavorite(userFavorite)); 
+        } 
+        catch (Exception e)
+        {
+            throw new Exception($"Erro: {e.Message}");
+        } 
+    }
+    
+    [HttpPost, Route("DeleteFavorite")] 
+    [ProducesResponseType(typeof(UserFavorite), StatusCodes.Status200OK)] 
+    public async Task<IActionResult> RemoveFavorite([FromBody] UserFavorite userFavorite) 
+    { 
+        try 
+        {
+            return Ok(await new FavoriteController().RemoveFavorite(userFavorite)); 
         } 
         catch (Exception e)
         {
